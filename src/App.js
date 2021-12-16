@@ -4,7 +4,7 @@ import Weather from './components/weather/Weather'
 import axios from 'axios'
 
 const App = () => {
-  const [weather, setWeather] = useState()
+  const [weather, setWeather] = useState([])
   const [city, setCity] = useState('')
   const [search, setSearch] = useState(false)
 
@@ -16,8 +16,14 @@ const App = () => {
     axios
       .get(`${process.env.REACT_APP_API_URL}/forecast/daily?city=${city}&key=${process.env.REACT_APP_API_KEY}`)
       .then(response => {
-        setWeather(response.data.data)
-        setSearch(true)
+        console.log(response)
+        if(response.statusText === 'No Content'){
+          setSearch(false)
+          setWeather([])
+        } else {
+          setWeather(response.data.data)
+          setSearch(true)
+        }
       })
   }
 
