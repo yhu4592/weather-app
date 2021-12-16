@@ -25,6 +25,10 @@ const App = () => {
           setSearch(true)
         }
       })
+      .catch(error => {
+        console.log(error)
+        setSearch(false)
+      })
   }
 
   return (
