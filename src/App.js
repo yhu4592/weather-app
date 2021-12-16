@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react"
-
+import React, { useState, useEffect } from 'react'
+import Search from './components/Search'
 import axios from 'axios'
 
 const App = () => {
@@ -17,13 +17,12 @@ const App = () => {
   }
 
   return (
-    <div>
-      <input
-        onChange={handleChange}
-        type='text'
-        value={city}
+    <div id="app">
+      <Search
+        city={city} 
+        handleChange={handleChange}
+        handleClick={handleClick}
       />
-      <button onClick={handleClick}>Search</button>
     </div>
   )
 }
