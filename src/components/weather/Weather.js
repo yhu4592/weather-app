@@ -9,7 +9,7 @@ const Weather = ({weather}) => {
   return (
     <div id='weather'>
       <CurrentWeather currentWeather={currentWeather}/>
-      <ForecastWeather forecast={forecastWeather}/>
+      <ForecastWeather forecasts={forecastWeather}/>
     </div>
   )
 }
