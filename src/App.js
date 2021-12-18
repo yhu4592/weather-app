@@ -14,7 +14,7 @@ const App = () => {
 
   const handleClick = () => {
     axios
-      .get(`${process.env.REACT_APP_API_URL}/forecast/daily?city=${city}&key=${process.env.REACT_APP_API_KEY}`)
+      .get(`${process.env.REACT_APP_API_URL}/forecast/daily?city=${city}&units=I&key=${process.env.REACT_APP_API_KEY}`)
       .then(response => {
         if(response.statusText === 'No Content'){
           setSearch(false)
