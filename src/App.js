@@ -16,7 +16,6 @@ const App = () => {
     axios
       .get(`${process.env.REACT_APP_API_URL}/forecast/daily?city=${city}&key=${process.env.REACT_APP_API_KEY}`)
       .then(response => {
-        console.log(response)
         if(response.statusText === 'No Content'){
           setSearch(false)
           setWeather([])
