@@ -1,9 +1,14 @@
 import React from 'react'
+import ImperialWeather from './ImperialWeather.js'
+import MetricWeather from './MetricWeather.js'
 
-const CurrentWeather = ({currentWeather}) => {
+const CurrentWeather = ({isImperial, currentWeather}) => {
   return (
     <div>
-      {console.log(currentWeather)}
+      {isImperial 
+        ? <ImperialWeather currentWeather={currentWeather}/>
+        : <MetricWeather currentWeather={currentWeather}/>
+      }
     </div>
   )
 }
