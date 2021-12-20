@@ -7,8 +7,12 @@ const Weather = ({weather}) => {
   let currentWeather = weather[0]
   let forecastWeather = weather.slice(1, 6)
 
-  const handleClick = () => {
-    setIsImperial(!isImperial)
+  const handleFahrenheitClick = () => {
+    setIsImperial(true)
+  }
+
+  const handleCelciusClick = () => {
+    setIsImperial(false)
   }
 
   return (
@@ -17,8 +21,8 @@ const Weather = ({weather}) => {
         isImperial={isImperial} 
         currentWeather={currentWeather}
       />
-      <button onClick={handleClick}>F</button>
-      <button onClick={handleClick}>C</button>
+      <button onClick={handleFahrenheitClick}>F</button>
+      <button onClick={handleCelciusClick}>C</button>
       <ForecastWeather
         isImperial={isImperial} 
         forecasts={forecastWeather}
