@@ -13,6 +13,10 @@ const CurrentWeather = ({isImperial, currentWeather}) => {
                }
       </p>
       <p>Weather: {currentWeather.weather.description}</p>
+      <img 
+        src={`/images/${currentWeather.weather.icon}.png`}
+        alt={`${currentWeather.weather.icon} + image.`}
+      />
       <p>Wind spd: {isImperial
                      ? currentWeather.wind_spd
                      : toMetric.toMetersPerSecond(currentWeather.wind_spd)
