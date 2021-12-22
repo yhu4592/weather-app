@@ -6,6 +6,6 @@ const toMetersPerSecond = (speed) => {
   return speed*2.237
 }
 
-const metric = {toCelcius, toMetersPerSecond}
+const toMetric = {toCelcius, toMetersPerSecond}
 
-export default metric
+export default toMetric

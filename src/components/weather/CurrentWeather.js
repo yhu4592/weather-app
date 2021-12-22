@@ -1,5 +1,5 @@
 import React from 'react'
-import metric from '../../modules/toMetric'
+import toMetric from '../../modules/totoMetric'
 
 const CurrentWeather = ({isImperial, currentWeather}) => {
 
@@ -9,13 +9,13 @@ const CurrentWeather = ({isImperial, currentWeather}) => {
       <p>Date: {currentWeather.datetime}</p>
       <p>Temp: {isImperial 
                  ? currentWeather.temp 
-                 : metric.toCelcius(currentWeather.temp)
+                 : toMetric.toCelcius(currentWeather.temp)
                }
       </p>
       <p>Weather: {currentWeather.weather.description}</p>
       <p>Wind spd: {isImperial
                      ? currentWeather.wind_spd
-                     : metric.toMetersPerSecond(currentWeather.wind_spd)
+                     : toMetric.toMetersPerSecond(currentWeather.wind_spd)
                     }
       </p>
       <p>Precip: {currentWeather.precip}</p>

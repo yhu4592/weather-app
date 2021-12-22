@@ -1,5 +1,5 @@
 import React from 'react'
-import metric from '../../modules/toMetric'
+import toMetric from '../../modules/totoMetric'
 
 const ForecastDay = ({forecast, isImperial}) => {
   return (
@@ -8,7 +8,7 @@ const ForecastDay = ({forecast, isImperial}) => {
       <p>Weather: {forecast.weather.description}</p>
       <p>Temp: {isImperial 
                  ? forecast.temp 
-                 : metric.toCelcius(forecast.temp)
+                 : toMetric.toCelcius(forecast.temp)
                }
       </p>
     </div>
