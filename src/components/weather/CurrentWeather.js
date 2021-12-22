@@ -1,5 +1,5 @@
 import React from 'react'
-import toMetric from '../../modules/totoMetric'
+import toMetric from '../../modules/toMetric'
 
 const CurrentWeather = ({isImperial, currentWeather}) => {
 
