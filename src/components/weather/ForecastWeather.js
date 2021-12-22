@@ -1,13 +1,14 @@
 import React from 'react'
 import ForecastDay from './ForecastDay'
 
-const ForecastWeather = ({forecastWeather}) => {
+const ForecastWeather = ({isImperial, forecastWeather}) => {
   return (
     <div id='forecastComponent'>
       {forecastWeather.map((forecast, index)=> 
         <ForecastDay 
           key={index}
           forecast={forecast}
+          isImperial={isImperial}
         />  
       )}
     </div>

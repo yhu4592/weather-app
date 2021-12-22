@@ -5,7 +5,7 @@ import ForecastWeather from './ForecastWeather'
 const Weather = ({weather}) => {
   const [isImperial, setIsImperial] = useState(true)
   let currentWeather = weather[0]
-  let forecastWeather = weather.slice(1, 6)
+  let forecastWeather = weather.slice(1, 7)
 
   const handleFahrenheitClick = () => {
     setIsImperial(true)
