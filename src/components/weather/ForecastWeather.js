@@ -1,10 +1,10 @@
 import React from 'react'
 import ForecastDay from './ForecastDay'
 
-const ForecastWeather = ({forecasts}) => {
+const ForecastWeather = ({forecastWeather}) => {
   return (
     <div id='forecastComponent'>
-      {forecasts.map((forecast, index)=> 
+      {forecastWeather.map((forecast, index)=> 
         <ForecastDay 
           key={index}
           forecast={forecast}

@@ -25,7 +25,7 @@ const Weather = ({weather}) => {
       <button onClick={handleCelciusClick}>C</button>
       <ForecastWeather
         isImperial={isImperial} 
-        forecasts={forecastWeather}
+        forecastWeather={forecastWeather}
       />
     </div>
   )
