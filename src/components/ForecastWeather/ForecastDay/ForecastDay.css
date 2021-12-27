@@ -46,3 +46,26 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* */
+
+.forecastDay {
+  width: 16.6%;
+  display: inline-block;
+  text-align: center;
+}
+
+.precip {
+  color: rgb(0, 141, 223);
+}
+
+
+.highTemp {
+  width: 50%;
+  display: inline-block;
+}
+.lowTemp {
+  color: rgb(128, 128, 128);
+  width: 50%;
+  display: inline-block;
+}
