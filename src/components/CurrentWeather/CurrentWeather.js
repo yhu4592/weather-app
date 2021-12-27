@@ -8,9 +8,9 @@ const CurrentWeather = ({isImperial, currentWeather}) => {
       <div id='currentWeatherContainer'>
       <p>Date: {currentWeather.datetime}</p>
       <p>Temp: {isImperial 
-                 ? currentWeather.temp 
+                 ? currentWeather.temp
                  : toMetric.toCelcius(currentWeather.temp)
-               }
+               } 
       </p>
       <p>Weather: {currentWeather.weather.description}</p>
       <img 

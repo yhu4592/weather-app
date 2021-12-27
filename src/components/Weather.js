@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import CurrentWeather from './CurrentWeather'
-import ForecastWeather from './ForecastWeather'
+import CurrentWeather from './CurrentWeather/CurrentWeather'
+import ForecastWeather from './ForecastWeather/ForecastWeather'
 
 const Weather = ({weather}) => {
   const [isImperial, setIsImperial] = useState(true)

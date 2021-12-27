@@ -1,5 +1,5 @@
 import React from 'react'
-import ForecastDay from './ForecastDay'
+import ForecastDay from './ForecastDay/ForecastDay'
 
 const ForecastWeather = ({isImperial, forecastWeather}) => {
   return (

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Search from './components/Search'
-import Weather from './components/weather/Weather'
+import Weather from './components/Weather'
 import axios from 'axios'
 
 const App = () => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import toMetric from '../../modules/toMetric'
+import toMetric from '../../../modules/toMetric'
 
 const ForecastDay = ({forecast, isImperial}) => {
   return (
