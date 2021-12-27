@@ -4,19 +4,30 @@ import './ForecastDay.css'
 
 const ForecastDay = ({forecast, isImperial}) => {
   return (
-    <div id='forecastDay'>
-      <p>Date: {forecast.datetime}</p>
-      <p>Weather: {forecast.weather.description}</p>
-      <p className='precip'>{(forecast.precip*100).toFixed()}%</p>
+    <div className='forecastDay'>
+      <p>{forecast.datetime}</p>
       <img 
         src={`/images/${forecast.weather.icon}.png`}
         alt={`${forecast.weather.icon} + image.`}
       />
-      <p>Temp: {isImperial 
-                 ? forecast.temp 
-                 : toMetric.toCelcius(forecast.temp)
-               }
-      </p>
+      <p>{forecast.weather.description}</p>
+      <div className='forecastTemperature'>
+        <div className='highTemp'>
+        {isImperial 
+           ? (forecast.high_temp).toFixed()
+           : (toMetric.toCelcius(forecast.temp)).toFixed()
+         }&deg;  
+         
+        </div>
+        <div className='lowTemp'>
+          {isImperial 
+            ? (forecast.low_temp).toFixed()
+            : (toMetric.toCelcius(forecast.temp)).toFixed()
+          }&deg;
+        </div>
+      </div>
+      
+      <p className='precip'>{(forecast.precip*100).toFixed()}%</p>
     </div>
   )
 }
