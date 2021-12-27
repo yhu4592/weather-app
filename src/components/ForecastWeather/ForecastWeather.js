@@ -1,9 +1,10 @@
 import React from 'react'
 import ForecastDay from './ForecastDay/ForecastDay'
+import './ForecastWeather.css'
 
 const ForecastWeather = ({isImperial, forecastWeather}) => {
   return (
-    <div id='forecastComponent'>
+    <div className='forecastComponent'>
       {forecastWeather.map((forecast, index)=> 
         <ForecastDay 
           key={index}
