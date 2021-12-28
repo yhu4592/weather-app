@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import CurrentWeather from './CurrentWeather/CurrentWeather'
 import ForecastWeather from './ForecastWeather/ForecastWeather'
+import UnitConversion from './UnitConversion/UnitConversion'
 
 const Weather = ({weather}) => {
   const [isImperial, setIsImperial] = useState(true)
@@ -21,8 +22,10 @@ const Weather = ({weather}) => {
         isImperial={isImperial} 
         currentWeather={currentWeather}
       />
-      <button onClick={handleFahrenheitClick}>F</button>
-      <button onClick={handleCelciusClick}>C</button>
+      <UnitConversion
+        handleFahrenheitClick={handleFahrenheitClick}
+        handleCelciusClick={handleCelciusClick}
+      />
       <ForecastWeather
         isImperial={isImperial} 
         forecastWeather={forecastWeather}
