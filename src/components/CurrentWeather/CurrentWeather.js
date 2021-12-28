@@ -22,6 +22,11 @@ const CurrentWeather = ({isImperial, currentWeather}) => {
            ? (currentWeather.wind_spd).toFixed()
            : (toMetric.toKmPerSecond(currentWeather.wind_spd)).toFixed()
          }
+
+         {isImperial
+           ? ' mph'
+           : ' km/s'
+         }
       </p>
       <p>{currentWeather.precip}%</p>
     </div>  
