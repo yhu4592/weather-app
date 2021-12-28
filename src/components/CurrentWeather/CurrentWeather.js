@@ -6,23 +6,24 @@ const CurrentWeather = ({isImperial, currentWeather}) => {
   return (
     <div>
       <div id='currentWeatherContainer'>
-      <p>Date: {currentWeather.datetime}</p>
-      <p>Temp: {isImperial 
-                 ? currentWeather.temp
-                 : toMetric.toCelcius(currentWeather.temp)
-               } 
-      </p>
-      <p>Weather: {currentWeather.weather.description}</p>
+      <p>{currentWeather.datetime}</p>
+      
       <img 
         src={`/images/${currentWeather.weather.icon}.png`}
         alt={`${currentWeather.weather.icon} + image.`}
       />
-      <p>Wind spd: {isImperial
-                     ? currentWeather.wind_spd
-                     : toMetric.toMetersPerSecond(currentWeather.wind_spd)
-                    }
+      <p>{currentWeather.weather.description}</p>
+      <p>{isImperial 
+           ? (currentWeather.temp).toFixed()
+           : (toMetric.toCelcius(currentWeather.temp)).toFixed()
+         }&deg;
       </p>
-      <p>Precip: {currentWeather.precip}</p>
+      <p>{isImperial
+           ? (currentWeather.wind_spd).toFixed()
+           : (toMetric.toMetersPerSecond(currentWeather.wind_spd)).toFixed()
+         }
+      </p>
+      <p>{currentWeather.precip}%</p>
     </div>  
     </div>
   )
