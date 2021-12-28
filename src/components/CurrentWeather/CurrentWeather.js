@@ -4,8 +4,7 @@ import toMetric from '../../modules/toMetric'
 const CurrentWeather = ({isImperial, currentWeather}) => {
 
   return (
-    <div>
-      <div id='currentWeatherContainer'>
+    <div id='currentWeatherContainer'>
       <p>{currentWeather.datetime}</p>
       
       <img 
@@ -29,7 +28,6 @@ const CurrentWeather = ({isImperial, currentWeather}) => {
          }
       </p>
       <p>{currentWeather.precip}%</p>
-    </div>  
     </div>
   )
 }
