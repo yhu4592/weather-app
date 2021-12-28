@@ -55,17 +55,25 @@ table {
   text-align: center;
 }
 
+.forecastDay img {
+	width: 50%;
+}
+
+.forecastDay p, .forecastTemperature {
+	padding-bottom: 0.25em;
+}
+
 .precip {
   color: rgb(0, 141, 223);
 }
 
-
 .highTemp {
-  width: 50%;
+  width: 20%;
   display: inline-block;
 }
+
 .lowTemp {
   color: rgb(128, 128, 128);
-  width: 50%;
+  width: 20%;
   display: inline-block;
 }
