@@ -1,0 +1,15 @@
+.buttonContainer {
+  display: inline-block;
+}
+
+.active {
+  border: none;
+  background-color: transparent;
+  color: black;
+}
+
+.inactive {
+  border: none;
+  background-color: transparent;
+  color: gray;
+}

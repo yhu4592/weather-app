@@ -14,15 +14,18 @@ const SpecificInfo = (props) => {
 
   return (
     <div>
-      <p>{isImperial 
+      <div className='temperature'>
+        <p>{isImperial 
            ? (temp).toFixed()
            : (toMetric.toCelcius(temp)).toFixed()
          }&deg;
-         <UnitConversion
-           handleFahrenheitClick={handleFahrenheitClick}
-           handleCelciusClick={handleCelciusClick}
-         />
-      </p>
+        </p>
+        <UnitConversion
+          isImperial={isImperial}
+          handleFahrenheitClick={handleFahrenheitClick}
+          handleCelciusClick={handleCelciusClick}
+        />
+      </div>
       <p>{isImperial
            ? (wind_spd).toFixed()
            : (toMetric.toKmPerSecond(wind_spd)).toFixed()
