@@ -2,8 +2,14 @@ import React from 'react'
 import GeneralInfo from './GeneralInfo/GeneralInfo'
 import SpecificInfo from './SpecificInfo/SpecificInfo'
 
-const CurrentWeather = ({isImperial, currentWeather}) => {
-
+const CurrentWeather = (props) => {
+  const {
+    isImperial, 
+    currentWeather, 
+    handleCelciusClick, 
+    handleFahrenheitClick
+  } = props
+  
   return (
     <div id='currentWeatherContainer'>
       <GeneralInfo 
@@ -16,6 +22,8 @@ const CurrentWeather = ({isImperial, currentWeather}) => {
         temp={currentWeather.temp}
         wind_spd={currentWeather.wind_spd}
         precip={currentWeather.precip}
+        handleCelciusClick={handleCelciusClick}
+        handleFahrenheitClick={handleFahrenheitClick}
       />
     </div>
   )
