@@ -1,0 +1,8 @@
+.temperature p {
+  display: inline-block;
+}
+
+.specificInfo {
+  width: 50%;
+  display: inline-block;
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import toMetric from '../../../modules/toMetric'
 import UnitConversion from './UnitConversion/UnitConversion'
+import './SpecificInfo.css'
 
 const SpecificInfo = (props) => {
   const {
@@ -13,7 +14,7 @@ const SpecificInfo = (props) => {
   } = props
 
   return (
-    <div>
+    <div className='specificInfo'>
       <div className='temperature'>
         <p>{isImperial 
            ? (temp).toFixed()
