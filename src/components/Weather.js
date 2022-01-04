@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import CurrentWeather from './CurrentWeather/CurrentWeather'
 import ForecastWeather from './ForecastWeather/ForecastWeather'
-import UnitConversion from './CurrentWeather/SpecificInfo/UnitConversion/UnitConversion'
 
 const Weather = ({weather}) => {
   const [isImperial, setIsImperial] = useState(true)
