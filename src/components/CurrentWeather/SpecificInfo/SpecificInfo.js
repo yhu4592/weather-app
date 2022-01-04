@@ -6,6 +6,7 @@ import './SpecificInfo.css'
 const SpecificInfo = (props) => {
   const {
     isImperial, 
+    location, 
     temp, 
     wind_spd, 
     precip, 
@@ -15,6 +16,7 @@ const SpecificInfo = (props) => {
 
   return (
     <div className='specificInfo'>
+      <p>{location}</p>
       <div className='temperature'>
         <p>{isImperial 
            ? (temp).toFixed()

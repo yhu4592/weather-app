@@ -5,7 +5,8 @@ import SpecificInfo from './SpecificInfo/SpecificInfo'
 const CurrentWeather = (props) => {
   const {
     isImperial, 
-    currentWeather, 
+    currentWeather,
+    location, 
     handleCelciusClick, 
     handleFahrenheitClick
   } = props
@@ -18,7 +19,8 @@ const CurrentWeather = (props) => {
         icon={currentWeather.weather.icon}
       />
       <SpecificInfo
-        isImperial={isImperial} 
+        isImperial={isImperial}
+        location={location}
         temp={currentWeather.temp}
         wind_spd={currentWeather.wind_spd}
         precip={currentWeather.precip}

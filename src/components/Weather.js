@@ -4,8 +4,9 @@ import ForecastWeather from './ForecastWeather/ForecastWeather'
 
 const Weather = ({weather}) => {
   const [isImperial, setIsImperial] = useState(true)
-  let currentWeather = weather[0]
-  let forecastWeather = weather.slice(1, 7)
+  let currentWeather = weather.data[0]
+  let forecastWeather = weather.data.slice(1, 7)
+  let location = weather.city_name + ', ' + weather.state_code
 
   const handleFahrenheitClick = () => {
     setIsImperial(true)
@@ -20,6 +21,7 @@ const Weather = ({weather}) => {
       <CurrentWeather 
         isImperial={isImperial} 
         currentWeather={currentWeather}
+        location={location}
         handleCelciusClick={handleCelciusClick}
         handleFahrenheitClick={handleFahrenheitClick}
       />

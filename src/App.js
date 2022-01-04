@@ -21,7 +21,7 @@ const App = () => {
           setSearch(false)
           setWeather([])
         } else {
-          setWeather(response.data.data)
+          setWeather(response.data)
           setSearch(true)
         }
       })
