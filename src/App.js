@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Search from './components/Search'
 import Weather from './components/Weather'
 import axios from 'axios'
+import './App.css'
 
 const App = () => {
   const [weather, setWeather] = useState([])
@@ -31,7 +32,7 @@ const App = () => {
   }
 
   return (
-    <div id='app'>
+    <div className='app'>
       <Search
         city={city} 
         handleChange={handleChange}
