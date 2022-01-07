@@ -1,7 +1,8 @@
 .forecastDay {
-  width: 16.6%;
+  width: 16%;
   display: inline-block;
   text-align: center;
+  background-color: white;
 }
 
 .forecastDay img {

@@ -5,13 +5,15 @@ import './GeneralInfo.css'
 const GeneralInfo = ({datetime, icon, description}) => {
   return (
     <div className='generalInfo'>
-      <p>{datetime}</p>
-      
+      <div className='text'>
+        <p id='title'>Today</p>
+        <p>{description}</p>
+      </div>  
       <img 
         src={`/images/${icon}.png`}
         alt={`${icon}`}
       />
-      <p>{description}</p>
+      
     </div>
   )
 }

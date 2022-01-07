@@ -1,7 +1,7 @@
 .weather {
   margin: 6em auto;
-  background-color: aliceblue;
-  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
   padding: 2em;
   border-radius: 10px;
+  border: 1px transparent rgb(255, 255, 255);
 }

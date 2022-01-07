@@ -16,7 +16,7 @@ const SpecificInfo = (props) => {
 
   return (
     <div className='specificInfo'>
-      <p>{location}</p>
+      <p id='title'>{location}</p>
       <div className='temperature'>
         <p>{isImperial 
            ? (temp).toFixed()

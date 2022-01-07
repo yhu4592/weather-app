@@ -1,5 +1,21 @@
 .generalInfo {
-  width: 50%;
+  width: 66%;
   display: inline-block;
   text-align: left;
+}
+
+img {
+  width: 50%;
+}
+
+.text {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.text #title {
+  font-size: 1.5em;
+  font-weight: 600;
+  padding-bottom: 0.5em;
 }

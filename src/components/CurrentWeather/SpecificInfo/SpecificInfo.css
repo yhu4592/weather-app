@@ -3,8 +3,14 @@
 }
 
 .specificInfo {
-  width: 50%;
+  width: 33%;
   display: inline-block;
   vertical-align: top;
   text-align: right;
+}
+
+.specificInfo #title {
+  font-size: 1.5em;
+  padding-bottom: 0.5em;
+  font-weight: 800;
 }
