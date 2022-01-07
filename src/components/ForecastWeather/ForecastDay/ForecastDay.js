@@ -9,8 +9,8 @@ const ForecastDay = ({forecast, isImperial}) => {
       <img 
         src={`/images/${forecast.weather.icon}.png`}
         alt={`${forecast.weather.icon} + image.`}
+        title={forecast.weather.description}
       />
-      <p>{forecast.weather.description}</p>
       <div className='forecastTemperature'>
         <div className='highTemp'>
         {isImperial 
