@@ -5,7 +5,7 @@ import './ForecastDay.css'
 const ForecastDay = ({forecast, isImperial}) => {
   return (
     <div className='forecastDay'>
-      <p>{forecast.datetime}</p>
+      <p>{forecast.datetime.slice(5).replace('-', '/')}</p>
       <img 
         src={`/images/${forecast.weather.icon}.png`}
         alt={`${forecast.weather.icon} + image.`}
