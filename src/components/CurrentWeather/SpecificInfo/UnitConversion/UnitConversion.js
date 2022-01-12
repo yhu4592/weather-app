@@ -3,7 +3,7 @@ import './UnitConversion.css'
 
 const UnitConversion = ({isImperial, handleFahrenheitClick, handleCelciusClick}) => {
   return (
-    <div className='buttonContainer'>
+    <div id='buttonContainer'>
       <button 
         className={isImperial ? 'active' : 'inactive'}
         onClick={handleFahrenheitClick}

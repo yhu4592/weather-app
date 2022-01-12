@@ -18,7 +18,7 @@ const Weather = ({weather}) => {
   }
 
   return (
-    <div className='weather'>
+    <div id='weather'>
       <CurrentWeather 
         isImperial={isImperial} 
         currentWeather={currentWeather}

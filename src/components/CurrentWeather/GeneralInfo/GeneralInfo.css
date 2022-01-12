@@ -1,4 +1,4 @@
-.generalInfo {
+#generalInfo {
   width: 66%;
   display: inline-block;
   text-align: left;
@@ -8,13 +8,13 @@ img {
   width: 50%;
 }
 
-.text {
+#text {
   width: 50%;
   display: inline-block;
   vertical-align: top;
 }
 
-.text #title {
+#text #title {
   font-size: 1.5em;
   font-weight: 600;
   padding-bottom: 0.5em;

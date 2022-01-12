@@ -4,7 +4,7 @@ import './ForecastWeather.css'
 
 const ForecastWeather = ({isImperial, forecastWeather}) => {
   return (
-    <div className='forecastComponent'>
+    <div id='forecastComponent'>
       <p id='title'>Rest of the Week</p>
       {forecastWeather.map((forecast, index)=> 
         <ForecastDay 

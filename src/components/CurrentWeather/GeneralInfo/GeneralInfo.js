@@ -4,8 +4,8 @@ import './GeneralInfo.css'
 
 const GeneralInfo = ({datetime, icon, description}) => {
   return (
-    <div className='generalInfo'>
-      <div className='text'>
+    <div id='generalInfo'>
+      <div id='text'>
         <p id='title'>Today</p>
         <p>{description}</p>
       </div>  
