@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Search from './components/Search'
+import Search from './components/Search/Search'
 import Weather from './components/Weather/Weather'
 import axios from 'axios'
 import './App.css'
